@@ -51,6 +51,7 @@ public static String stockSummary(String[] lstOfArt, String[] lstOf1stLetter) {
         String result = "";
 
         for ( int i =0; i < lstOf1stLetter.length; i++) {
+           // reset total at each iteration
            total = 0;
 
             for (int j = 0; j < lstOfArt.length; j++) {
