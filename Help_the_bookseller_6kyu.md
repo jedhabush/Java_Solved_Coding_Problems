@@ -56,7 +56,7 @@ public static String stockSummary(String[] lstOfArt, String[] lstOf1stLetter) {
 
             for (int j = 0; j < lstOfArt.length; j++) {
 
-                // Add total quantity if the first CharAt(0) matches then replace all non numbers else 0
+                // Add total quantity if the first CharAt(0) matches then replace all non numbers and convert to Integer else 0
                 total+= lstOfArt[j].charAt(0) == (lstOf1stLetter[i].charAt(0)) ? Integer.parseInt(lstOfArt[j].replaceAll("[^0-9]" , "")) : 0;
 
 
